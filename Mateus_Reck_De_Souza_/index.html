@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Majo Modas</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon-16x16.png" type="image/x-icon">
+  </head>
+
+</head>
+
+<body>
+  <header>
+      <nav>
+          <section class="logo">Majo Modas</section>
+          <ul>
+              <li><a href="#home">INÍCIO</a></li>
+              <li><a href="#catalogo">CATÁLOGO</a></li>
+              <li><a href="#mapbox">LOCALIZAÇÃO</a></li>
+          </ul>
+
+            <a href="#carrinho" class="cart-icon" aria-label="Carrinho de compras">
+              <button class="carrinho" id="carrinho-btn">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span id="qtd-produtos">0</span>
+                  <img src="img/favicon.ico.png" alt="favicon">
+              </button>
+            </a>
+
+            <section id="carrinho-modal" class="modal">
+                <article class="modal-content">
+                  <h2>Carrinho de Compras</h2>
+                  <ul id="lista-produtos"></ul>
+                  <p id="total"></p>
+                  <button id="finalizar-compra">Finalizar Compra</button>
+                  <button id="fechar-carrinho" aria-label="Fechar carrinho">X</button>
+                </article>
+            <section>
+      </nav>
+  </header>
+
+  <main>
+
+    <section id="home">
+        <section class="ladoleft">  
+            <h1 >Bem Vindo À Majo Modas</h1>
+            <p>A loja onde cada peça conta uma história de elegância e autenticidade. Aqui, acreditamos que a moda é mais do que vestir-se; é uma expressão da sua personalidade. Por isso, selecionamos cuidadosamente roupas que combinam qualidade, conforto e design exclusivo.
+                Nossas coleções são pensadas para todas as ocasiões, desde o look casual perfeito para o dia a dia até trajes sofisticados para eventos especiais. Trabalhamos com tecidos de alta qualidade e seguimos as últimas tendências da moda, garantindo que você esteja sempre atual e confiante.</p>
+        </section>
+            <section class="ladoright">
+                <img src="img/" alt=""/>
+            </section>
+    </section>
+
+    <h2 id="titulo1">Categorias</h2>      
+    <section id="categorias">
+        <nav>
+            <ul>
+                <li class="category" data-category="masculino">
+                    <img src="img/tipomasc.png" alt="Masculino">
+                    <h2>Masculino</h2>
+                </li>
+                <li class="category" data-category="feminino">
+                    <img src="img/tipofem.png" alt="Feminino">
+                    <h2>Feminino</h2>
+                </li>
+                <li class="category" data-category="infantil">
+                    <img src="img/tipoinf.png" alt="Infantil">
+                    <h2>Infantil</h2>
+                </li>
+                <li class="category" id="showAll">
+                    <img src="img/fememasc.jpeg" alt="Mostrar Todos">
+                    <h2>Mostrar Todos</h2>
+                </li>
+            </ul>
+        </nav>
+        
+    </section>
+
+      <section id="catalogo">
+          <h2>Nosso Catálogo</h2>
+          <ul class="grid-container">
+                        <li class="item" data-category="infantil">
+                        <img src="img/infantil1.png.jpeg" alt="Moletom Preto ">
+                        <p>Moletom Infantil Preto</p>
+                        <p>R$ 49,90</p>
+                        <button class="add-to-cart" data-name="Moletom Preto " data-price="49.90">Adicionar ao Carrinho</button>
+                        </li>
+                        <li class="item" data-category="masculino">
+                        <img src="img/camiseta2.jpg" alt="Camiseta Estampada">
+                        <p>Camiseta Estampada</p>
+                        <p>R$ 79,90</p>
+                        <button class="add-to-cart" data-name="Camiseta Estampada" data-price="79.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="infantil">
+                        <img src="img/infantil6.png.jpeg" alt="Vestido Rosa">
+                        <p>Vestido Infantil Rosa</p>
+                        <p>R$ 200,90</p>
+                        <button class="add-to-cart" data-name="Vestido Rosa" data-price="200.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="feminino">
+                         <img src="img/femini1.png.jpeg" alt="Camiseta Florida">
+                        <p>Camiseta Florida</p>
+                        <p>R$ 80,90</p>
+                        <button class="add-to-cart" data-name="Camiseta Florida" data-price="80.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="infantil">
+                        <img src="img/infantil3.png.jpeg" alt="Vestido Infantil">
+                        <p>Vestido Infantil</p>
+                        <p>R$ 179,90</p>
+                        <button class="add-to-cart" data-name="Vestido Infantil" data-price="179.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="feminino">
+                        <img src="img/femini2.png.jpeg" alt="Camisas Femininas">
+                        <p>Kit de Camisas Fem</p>
+                        <p>R$ 129,90</p>
+                        <button class="add-to-cart" data-name="Camisas Femininas" data-price="129.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="infantil">
+                        <img src="img/infantil4.png.jpeg" alt="Camiseta Infantil">
+                        <p>Camiseta Infantil</p>
+                        <p>R$ 59,90</p>
+                        <button class="add-to-cart" data-name="Camiseta Infantil" data-price="59.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="feminino">
+                        <img src="img/femini5.png.jpeg" alt="Kit 2 Camisas">
+                        <p>Kit 2x Camisas Fem</p>
+                        <p>R$ 109,90</p>
+                        <button class="add-to-cart" data-name="Kit 2 Camisas" data-price="59.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="masculino">
+                        <img src="img/camiseta9.jpg" alt="Camiseta Anime">
+                        <p>Camiseta Anime</p>
+                        <p>R$ 128,90</p>
+                        <button class="add-to-cart" data-name="Camiseta Anime" data-price="128.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="masculino">
+                        <img src="img/camiseta10.jpg" alt="Camiseta Fibra">
+                        <p>Camiseta Fibra</p>
+                        <p>R$ 109,90</p>
+                        <button class="add-to-cart" data-name="Camiseta Fibra" data-price="109.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="masculino">
+                            <img src="img/camiseta11.jpg" alt="Camiseta Gojo">
+                            <p>Camiseta Gojo</p>
+                            <p>R$ 499,90</p>
+                            <button class="add-to-cart" data-name="Camiseta Gojo" data-price="499.90">Adicionar ao Carrinho</button>
+                            </li>
+                        <li class="item" data-category="infantil">
+                        <img src="img/infantil5.png.jpeg" alt="Vestido Creme">
+                        <p>Vestido Infantil Creme</p>
+                        <p>R$ 209,90</p>
+                        <button class="add-to-cart" data-name="Vestido Creme" data-price="209.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="feminino">
+                        <img src="img/femini3.png.jpeg" alt="Kit Mesclado">
+                        <p>Kit Camisas Mescladas</p>
+                        <p>R$ 95,99</p>
+                        <button class="add-to-cart" data-name="Kit Mesclado" data-price="95.99">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="masculino">
+                        <img src="img/camiseta14.jpg" alt="Camiseta Pokemon">
+                        <p>Camiseta Pokemon</p>
+                        <p>R$ 170,90</p>
+                        <button class="add-to-cart" data-name="Camiseta Pokemon" data-price="170.90">Adicionar ao Carrinho</button>
+                        </li>
+                        </li>
+                        <li class="item" data-category="feminino">
+                        <img src="img/femini4.png.jpeg" alt="Kit Regatas">
+                        <p>Kit 3 Regatas</p>
+                        <p>R$ 150,90</p>
+                        <button class="add-to-cart" data-name="Kit Regatas" data-price="150.90">Adicionar ao Carrinho</button>
+                    </li>
+          </ul>
+      </section>
+      
+      <section id="mapbox">
+        <h1 class="local">Estamos localizados aqui!</h1>
+        <article class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3493.9374099144543!2d-49.448224123715086!3d-28.870479677837213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95222bd7c936f859%3A0xdb5814edae22131a!2sMajo%20Modas!5e0!3m2!1spt-BR!2sbr!4v1732307829106!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+  </main>
+
+  <footer>
+      <p>&copy; 2024 Made by Reckz06. Copia não comédia.</p>
+  </footer>
+
+<script src="javascript/javascript.js"></script>
+
+  </body>
+</html>
